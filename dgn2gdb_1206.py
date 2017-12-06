@@ -98,27 +98,6 @@ for k in range(1, 9): # 依序讀fileList中的項目(source_path)
                               val = string.split(';')[p].split('=')[1]
                               arcpy.CalculateField_management(layer2, col, val, "PYTHON", "")
                               print  "import " + str(FeatureType[j]) + " from " + str(fileNames[k]) + " to "+ FeatureClass[j] + ", " + "update info: " + string
-                    #arcpy.Delete_management(Path + FeatureType[j] + "_lyr2")
                      #-------------------------更新資料
-               #arcpy.Delete_management(Path + FeatureType[j] + "_lyr")
 
-
-
-
-                    
                
-                    
-                    
-              
-
-
-                    
-
-
-          
-     
-
-
-     
-
-
