@@ -1,7 +1,7 @@
 #-*-coding:utf-8-*-
 # 根據xls參數控制來源資料是否需匯入目的資料檔中
 # 資料需求-------------------------#source來源資料夾# target目的資料夾#mapping.xls 對應參數
-# 來源資料格式為dgn,目的資料夾格式為gdb 其他檔案格式亦可
+# 來源資料格式為dgn,目的資料夾格式為gdb 
 # 工作流程: 批次讀檔, 將xls內容存成陣列 -- > 用對應參數篩選來源資料 --> 將資料匯至目的資料夾檔案中
 # 使用工具: arcpy(Exists, MakeFeatureLayer, SelectLayerByAttribute, CalculateField, Delete)
 
@@ -52,8 +52,8 @@ for dirPath, dirNames, fileNames in os.walk(source_path):
           fileList.append(os.path.join(dirPath, f))
 
 # --------------------------------(C)--------------------------------
-#for k in range(0, int(len(fileList))-1): # 依序讀fileList中的項目(source_path)
-for k in range(1, 9): # 依序讀fileList中的項目(source_path)
+for k in range(0, int(len(fileList))-1): # 依序讀fileList中的項目(source_path)
+
 
 # --------------------------------(B)--------------------------------
 
