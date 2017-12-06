@@ -13,7 +13,7 @@ import xlrd
 import sys
 
 # ----------------------------路徑設定-----------------------------
-Path = "D:\\Ashley\\Personal\\dgn2gdb\\"
+Path = "D:\\Ashley\\Github\\dgn2gdb\\"
 source_path = Path + "source\\" # 來源資料夾
 target_path =  Path + "target\\VMap2.gdb\\VMap2TLM\\" # 目的資料夾
 data = xlrd.open_workbook(Path + "mapping.xls")
